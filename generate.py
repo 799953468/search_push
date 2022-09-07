@@ -41,8 +41,8 @@ for data in result:
 # bing 提交随机5条
 bingUrllist= bingUrllist + random.sample(result,5)
 # baidu google 提交随机50条
-if result.length < 50:
-    googleUrllist=googleUrllist + random.sample(result,result.length)
+if len(result) < 50:
+    googleUrllist=googleUrllist + random.sample(result,len(length))
 else
     googleUrllist=googleUrllist + random.sample(result,50)
 
