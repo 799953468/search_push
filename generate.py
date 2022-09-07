@@ -43,7 +43,7 @@ bingUrllist= bingUrllist + random.sample(result,5)
 # baidu google 提交随机50条
 if len(result) < 50:
     googleUrllist=googleUrllist + random.sample(result,len(length))
-else
+else:
     googleUrllist=googleUrllist + random.sample(result,50)
 
 
