@@ -4,7 +4,7 @@ import urllib
 import urllib.request
 import random
 
-site = 'https://blog.nameidi.top.top'
+site = 'https://blog.nameidi.top'
 sitemaps = ['/sitemap.xml']
 
 result = []
