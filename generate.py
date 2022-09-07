@@ -41,7 +41,11 @@ for data in result:
 # bing 提交随机5条
 bingUrllist= bingUrllist + random.sample(result,5)
 # baidu google 提交随机50条
-googleUrllist=googleUrllist + random.sample(result,50)
+if result.length < 50:
+    googleUrllist=googleUrllist + random.sample(result,result.length)
+else
+    googleUrllist=googleUrllist + random.sample(result,50)
+
 
 with open('urls.txt', 'w') as file:
     for data in googleUrllist:
